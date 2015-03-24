@@ -7,46 +7,70 @@
 <link rel="stylesheet" href="style.css">
 <style>
 #testDiv1 {
-  width: 35%;
-  font-size: 1em;
-  padding: 1em;
-  margin: 2em;
+  width: 300px;
+  padding: 15px;
+  margin: 10px;
 }
 #testDiv2 {
-  width: 35%;
-  font-size: 1em;
-  padding: 1em;
-  margin: 2em;
+  width: 300px;
+  padding: 15px;
+  margin: 10px;
+}
+#container {
+  width: 1200;
 }
 </style>
 </head>
 <body>
-<h1>Columns</h1>
+<h1 class="instructions">Columns</h1>
 <div id="intro" class="instructions">
-Below the ruler are two divs, testDiv1 and testDiv2. Let's make them into columns!! Try the following and see what happens: 
+  <em>NOTE: Before getting started with this exercise, make sure to increase the size of your browser window to take up the full screen of your laptop!</em><br>
+The ruler below is marked in 10 pixel increments. Below the ruler are two divs, testDiv1 and testDiv2. Let's make them into columns!! Try the following and see what happens:
 <ol>
-	<li>Float both divs right, what happens?</li>
+	      <li>Note how large each div currently is by measuring them on the ruler</li>
+        <li>Set the "box-sizing" property to "border-box" on each div. How does this change the size of the divs?</li>
+        <li>Float both divs right, what happens?</li>
         <li>Float both divs left, what happens?</li>
+        <li>Resize your browser window such that it is less than 600 pixels wide (use the ruler to measure). What happens? Set your browser window back to the full width of your screen when done.</li>
         <li>Float testDiv1 right and testDiv2 left. What happens?</li>
-        <li>Float both divs to the left or to the right and set the size of testDiv1 to 60%. What happens?</li>
-        <li>If we want two equally sized columns, what is the largest size setting in % we can set both divs to with these padding and margin settings?</li>
-        <li>What happens if you resize your browser window after setting the divs to the max width setting you discovered in the previous step?</li>
-        <li>Try some different padding and margin settings, and see how that affects the maximum width setting that you can use for your columns</li>
+        <li>Float both divs to the left or to the right and set the size of testDiv1 to 2000px. What happens?</li>
+        <li>So far, we have been creating <em>fixed</em> layouts by setting the width of our columns in pixels. The advantage of a fixed layout is that elements look consistent, no matter the size of the display. The disadvantage of fixed layouts is that they may overflow a small display. <em>Fluid</em> layouts set widths as percentage values so that the layout will resize as the browser window resizes. Try a fluid layout now. Set both divs to a width of 35%, and set the container to a width of 100%.</li>
+        <li>What happens if you resize your browser window after setting the divs to the percentage setting in the previous step?</li>
 	<li>In the html source code for this page, copy testDiv1 and paste the copy below testDiv2. Change the id for this new div to testDiv3. Add a #testDiv3 section to the style rules. Now you have three columns to play with.</li>
         <li>Try to make a three column display with all three columns equally sized.</li>
-	<li>Try to make a three column display with the far left column about 25% of the page width, and the other two splitting the remaining 75%</li>
-	<li>Try to make a three column display with the far left column about 20% of the page width, the far right about 20%, and the middle column about 60%</li>
-</ol>  
+	<li>Try to make a three column display with the far left column about 25% of the page width, and the other two splitting the remaining 75%. Try this as both a fixed and a fluid layout.</li>
+</ol>
 </div>
 Ruler:
 <div id="bigRuler">
-	<div class="bigSegment">0</div><div class="bigSegment">100</div><div class="bigSegment">200</div><div class="bigSegment">300</div><div class="bigSegment">400</div><div class="bigSegment">500</div><div class="bigSegment">600</div><div class="bigSegment">700</div><div class="bigSegment">800</div><div class="bigSegment">900</div><div class="bigSegment">1000</div><div class="bigSegment">1100</div><div class="bigSegment">1200</div>
+	<div class="bigSegment">0</div><div class="bigSegment">100</div><div class="bigSegment">200</div><div class="bigSegment">300</div><div class="bigSegment">400</div><div class="bigSegment">500</div><div class="bigSegment">600</div>
+  <div class="bigSegment">700</div><div class="bigSegment">800</div><div class="bigSegment">900</div><div class="bigSegment">1000</div><div class="bigSegment">1100</div><div class="bigSegment">1200</div>
 </div>
 <div id="smallRuler">
-	<div class="ruledSegment"></div><div class="ruledSegment"> </div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div>
+	<div class="ruledSegment"></div><div class="ruledSegment"> </div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment">
+  </div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div>
+  <div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div>
+  <div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div>
+  <div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div>
+  <div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div>
+  <div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div>
+  <div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div>
+  <div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div>
+  <div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div>
+  <div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div>
+  <div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div>
+  <div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div>
+  <div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div>
+  <div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div>
+  <div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div>
+  <div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div>
+  <div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div>
+  <div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div>
+  <div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div>
+  <div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div><div class="ruledSegment"></div>
 </div>
 
-<div id="exercise1" class="exercise">
+<div id ="container" class="exercise">
    <div id="testDiv1" class="example1">
    <p>This is testDiv1. It wants to be a column. It has dreamed up being a column it's whole life. We can make that dream happen. Then we can dash it horribly, then we can make it happen again. It will be an emotional roller coaster for the div, but we will learn a lot along the way. </p>
    <p>You can use the firefox inspector to get a better sense of how the size and position of the divs are changing as the settings change. Go to the firefox menu and go to Developer->Inspector and hover over the divs.</p>

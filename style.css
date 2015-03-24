@@ -1,0 +1,67 @@
+body {
+  font-family: 'Alegreya', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#smallRuler {
+  clear: both;
+  width: 2000px;
+}
+
+#bigRuler {
+  clear: both;
+  width: 2000px;
+}
+
+.bigSegment {
+  width: 99px;
+  float: left;
+  box-sizing: border-box;
+  border-right: 1px solid black;
+  font-size: x-small;
+  height: 30px;
+}
+
+.ruledSegment {
+  width: 9px;
+  float: left;
+  box-sizing: border-box;
+  border-right: 1px solid black;
+  font-size: xx-small;
+  height: 30px;
+}
+
+.instructions {
+  background-color: #F0F0D8;
+  padding: .2em;
+  margin: 1em;
+  border-radius: .25em;
+  clear: both;
+}
+
+.exercise {
+  background-color: #f0f0f4;
+  clear: both;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+.example1 {
+  background-color: #d70044;
+  color: #fad42b;
+}
+
+.example2 {
+  background-color: #5f1130;
+  color: #fad42b;
+}
+
+h1.instructions {
+  background-color: #d70044;
+  color: #fad42b;
+  margin:0;
+  border-radius: 0;
+  padding-left: .5em;
+}
